@@ -164,25 +164,48 @@ nav ul li a:hover{
       color: chocolate;
    }
 
+   @media only screen and (min-width: 1500px) {
+   
+   nav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 10px 85px;
+      font-size: 1.5rem;
+    }
+
+    .info{
+      position: absolute;
+      width:50%;
+      padding: 15px;
+      height:100%;
+     font-size: 2.1rem;
+     padding-left:45px;
+   }
+   
+   .info span{
+      text-shadow: 3.5px 3.5px 2px #000;
+      color: chocolate;
+   }
+
    .download{
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       position: absolute;
       text-align: center;
-      padding-left: 40x;
-      padding-top: 18px;
+      padding-left: 50x;
+      padding-top: 20px;
       text-decoration: none;
       font-weight: bold;
       color: chocolate;
       display: inline-block;
       background:#212121;
-      line-height: 45px;
-      padding: 2px 25px;
-      border-radius: 15px;
+      line-height: 52px;
+      padding: 3px 30px;
+      border-radius: 20px;
       text-shadow: 4px 4px 2px #000;
    }
 
    .img-me{
-      border-radius: 20px;
+      border-radius: 25px;
       width: 35%;
       position:absolute;
       top: 15%;
