@@ -1,85 +1,198 @@
 *{
-   margin: 0; 
+   margin:0;
    padding: 0;
    font-family: sans-serif;
 }
 
-.hero{
-   position: relative;
+.aboutme{
    width: 100%;
-   height: 100vh;
-   background: slategray; 
-}
-
-
-img{
-   width: 240px;
-   height: 80px;
+   min-height:100vh;
+   background-color: #85929E;
+ 
 }
 
 
 nav{
-    display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    align-items: center;
-    justify-content:  space-between;
+   display: flex;
+   width: 90%;
+   margin: auto;
+   padding: 13px 0;
+   align-items: center;
+   justify-content:  space-between;
+}
+
+nav p{
+   font-size: 1.5rem;
+   margin: 2px;
+   
 }
 
 nav ul li{
-   display: inline-block;
-   list-style: none;
-   margin: 10px 50px;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
 }
 
 nav ul li a{
    text-decoration: none;
    color: #000;
    font-weight: bold;
-
 }
 
 nav ul li a:hover{
-    color: orange;
+   color: #EB984E;
+   text-shadow: 2px 2px 1px #000;
 }
 
-.detel{
-   margin-left: 100px;
-   margin-top: 30x;
+.contact p{
+   position: absolute;
+   padding:1.5px;
+   margin-left:4px;
+   padding-left: 10px;
+   bottom:20px;
 }
 
-.detel h1 {
-   font-size: 70px;
+.info{
+   position: absolute;
+   width:50%;
+   padding: 15px;
+   height:100%;
+  
 }
 
-.detel span{
+.info span{
+   text-shadow: 2px 2px 1px #000;
    color: chocolate;
 }
 
-.detel p{
-   font-size: 25px;
-   line-height: 35px;
-}
-
-.detel a{
-   background: #212121;
-   padding: 1px 15px;
+.download{
+   font-size: 0.9rem;
+   position: absolute;
+   text-align: center;
+   padding-left: 18x;
+   padding-top:10px;
    text-decoration: none;
    font-weight: bold;
    color: chocolate;
    display: inline-block;
+   background:#212121;
+   line-height: 33px;
+   padding: 1px 15px;
    border-radius: 10px;
-   font-size: 20px;
-   line-height: 50px;
-   margin: 30px 200px; 
+   text-shadow: 2px 2px 1px #000;
 }
 
-.picture{ 
-  display: block;
-  width: 410px;
-  height: 460px;
-  margin: -570px 20px;
-   margin-left: 66%;
-   border-radius: 30px;
+
+
+.img-me{
+   border-radius: 10px;
+   width: 42%;
+   position:absolute;
+   top: 18%;
+
+   margin-left: 55%;
+   transition: transform .5s ease-in-out; 
+}
+
+.img-me:hover{
+   transform: scale(1.05);
+   
+}
+
+
+@media only screen and (min-width: 768px) {
+   
+   nav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 10px 30px;
+      
+    }
+
+    .info{
+      position: absolute;
+      width:50%;
+      padding: 15px;
+      height:100%;
+     font-size: 1.7rem;
+   }
+   
+   .info span{
+      text-shadow: 4px 4px 2px #000;
+      color: chocolate;
+   }
+
+   .download{
+      font-size: 1.4rem;
+      position: absolute;
+      text-align: center;
+      padding-left: 50x;
+      padding-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: chocolate;
+      display: inline-block;
+      background:#212121;
+      line-height: 53px;
+      padding: 2px 30px;
+      border-radius: 20px;
+      text-shadow: 5px 6px 2px #000;
+   }
+
+}
+
+@media only screen and (min-width: 1000px) {
+   
+   nav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 10px 60px;
+      
+    }
+
+    .info{
+      position: absolute;
+      width:50%;
+      padding: 15px;
+      height:100%;
+     font-size: 1.7rem;
+     padding-left:35px;
+   }
+   
+   .info span{
+      text-shadow: 3.5px 3.5px 2px #000;
+      color: chocolate;
+   }
+
+   .download{
+      font-size: 1.2rem;
+      position: absolute;
+      text-align: center;
+      padding-left: 40x;
+      padding-top: 18px;
+      text-decoration: none;
+      font-weight: bold;
+      color: chocolate;
+      display: inline-block;
+      background:#212121;
+      line-height: 45px;
+      padding: 2px 25px;
+      border-radius: 15px;
+      text-shadow: 4px 4px 2px #000;
+   }
+
+   .img-me{
+      border-radius: 20px;
+      width: 35%;
+      position:absolute;
+      top: 15%;
+   
+      margin-left: 57%;
+   }
+
+   .img-me:hover{
+      transform: scale(1.08);
+      
+   }
+   
 }
