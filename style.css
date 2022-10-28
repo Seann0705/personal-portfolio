@@ -515,6 +515,10 @@ footer{
     .cover-details h2{
         font-size: 20px;
     }
+    
+    .cover-details h2 span{
+        font-size: 3vw;
+    }
 
     .description{
         margin-top: 35px;
@@ -651,7 +655,7 @@ footer{
     
     /* about me  */  
     .About-me{
-        height: 1150px;
+        height: 1200px;
     }
     
     .About-me h1{
@@ -887,4 +891,10 @@ footer{
         font-size: 13.5px;
     }
     
+}
+
+@media only screen and (max-width: 500px){
+    .About-me{
+        height: 750px;
+    }
 }
