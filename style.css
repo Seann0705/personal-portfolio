@@ -182,11 +182,12 @@ nav ul li a:hover{
     position: absolute;
     bottom: -1vw;
     right: 2vw; 
+    backface-visibility:hidden;
 }
 
 
 .flip-box-back{
-    margin-left: -2px;
+    margin-left: 0px;
     height: 35vw;
     position: absolute;
     border-radius: 20px;
@@ -219,7 +220,6 @@ nav ul li a:hover{
     position:relative;
     transition: transform 1.8s;
     transform-style: preserve-3d;
-    border: 1px solid black;
 }
 
 .flip:hover{
@@ -483,7 +483,6 @@ footer{
         border-radius: 20px;
         width: 40vw;
         backface-visibility:hidden;
-        border: 1px solid black;
     }
 
     .flip-box-back h2{
