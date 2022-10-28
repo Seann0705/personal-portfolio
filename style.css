@@ -736,6 +736,14 @@ footer{
         width: 90%;
     }
     
+    .details span{
+        font-size: 6vw;
+    }
+
+    .description h3{
+        font-size: 5.5vw;
+    }
+    
     .me-details{
         height: 600px;
         width: 100%;
