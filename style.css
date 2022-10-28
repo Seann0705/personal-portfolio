@@ -167,6 +167,7 @@ nav ul li a:hover{
     width: 30vw;
     margin-top: -60px;
     height: 35vw;
+    backface-visibility:hidden;
 }
 
 .img-and-text{
@@ -870,6 +871,10 @@ footer{
 
     .socials{
         margin-top: 110px;
+    }
+    
+    footer p{
+        font-size: 13.5px;
     }
     
 }
