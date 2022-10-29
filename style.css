@@ -723,6 +723,10 @@ footer{
     
     }
     
+    .flip:hover{
+        transform:rotateY(180deg);
+    }
+    
 
     .img-and-text{
         color: white;
