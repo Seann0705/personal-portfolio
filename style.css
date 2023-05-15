@@ -901,4 +901,10 @@ footer{
     .About-me{
         height: 750px;
     }
+    
+    .socials a{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
