@@ -33,6 +33,7 @@ nav{
     box-shadow: 0px 0.5px 3px;
     border-radius: 50px;
     margin-top: -15px;
+    box-shadow: 0 0 24px 0.2px rgb(185, 111, 0);
 }
 
 
@@ -46,8 +47,8 @@ nav ul li{
     list-style: none;
     align-items: center;
 
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: 20px;
     -webkit-transition: transform 0.3s ease-in-out;
 }
@@ -61,7 +62,8 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
     /* color: rgb(185, 111, 0); */
-    color: white;
+    /* color: white; */
+    color: rgb(185, 111, 0);
     padding: 12px;
     /* border: 1px solid black; */
     -moz-border-radius:75px;
@@ -70,6 +72,7 @@ nav ul li a{
 
 nav ul li a:hover{
    color: rgb(185, 111, 0);
+   color: rgb(101, 65, 10);
 }
 
 
@@ -126,8 +129,9 @@ nav ul li a:hover{
 }
 
 .Resume-button:hover{
-    background-color: rgb(118, 72, 15);
-    color: rgb(11, 8, 8);
+    /* background-color: rgb(118, 72, 15); */
+    color: rgb(185, 111, 0);
+    box-shadow: 0 0 30px 5px rgb(185, 111, 0);
 }
 
 .contact-me-button{
@@ -334,6 +338,21 @@ nav ul li a:hover{
     color: rgb(214, 124, 27);
     background-color: transparent;
     border: 1px solid rgb(214, 124, 27);
+}
+
+.work-img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+}
+
+.work-img img{
+    max-width: 23%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .project-img{
