@@ -36,7 +36,7 @@
         </div>
 
         <div class="resume">
-            <a href="https://drive.google.com/file/d/1kb3OUI8ruT7dAJ6czgUSKPO47_myI6M4/view?usp=drive_link" target="_blank" class="Resume-button">Resume</a>
+            <a class="Resume-button">Resume</a>
             <a href="#contact-id" class="contact-me-button">Contact Me</a>
         </div>
     </div>
@@ -59,6 +59,10 @@
             </div>
 
             <div class="me-details">
+                <div class="cover-details">
+                    <h2><i class="fa-solid fa-square fa-sm"></i><span>Currently at: </span> United Parcel Service (UPS)</h2>
+                </div>
+
                 <div class="cover-details">
                     <h2><i class="fa-solid fa-square fa-sm"></i><span>Education: </span> University of South Florida</h2>
                 </div>
@@ -115,6 +119,28 @@
             </div>
 
             <div class="project" data-reveal>
+                <h2>AI &amp; Machine Learning</h2>
+                <br>
+                <div class="work-img ai-icons">
+                    <i class="fa-solid fa-brain fa-2x"></i>
+                    <i class="fa-solid fa-robot fa-2x"></i>
+                    <i class="fa-solid fa-microchip fa-2x"></i>
+                </div>
+                <p>&nbsp;</p>
+
+                <div class="tech-grid">
+                    <p>PyTorch</p><p>TensorFlow</p>
+                    <p>RAG</p><p>LangChain</p>
+                    <p>Hugging Face</p><p>OpenAI API</p>
+                    <p>Embeddings</p><p>Vector DBs</p>
+                    <p>Prompt Eng.</p><p>Fine-tuning</p>
+                    <p>Scikit-learn</p><p>NumPy</p>
+                    <p>Pandas</p><p>Matplotlib</p>
+                </div>
+                <p>Large Language Models (LLMs)</p>
+            </div>
+
+            <div class="project" data-reveal>
                 <h2>Programming Languages</h2>
                 <br>
                 <div class="work-img">
@@ -159,27 +185,7 @@
                 <p>Software Development Life Cycle</p>
             </div>
 
-            <div class="project" data-reveal>
-                <h2>AI &amp; Machine Learning</h2>
-                <br>
-                <div class="work-img ai-icons">
-                    <i class="fa-solid fa-brain fa-2x"></i>
-                    <i class="fa-solid fa-robot fa-2x"></i>
-                    <i class="fa-solid fa-microchip fa-2x"></i>
-                </div>
-                <p>&nbsp;</p>
-
-                <div class="tech-grid">
-                    <p>PyTorch</p><p>TensorFlow</p>
-                    <p>RAG</p><p>LangChain</p>
-                    <p>Hugging Face</p><p>OpenAI API</p>
-                    <p>Embeddings</p><p>Vector DBs</p>
-                    <p>Prompt Eng.</p><p>Fine-tuning</p>
-                    <p>Scikit-learn</p><p>NumPy</p>
-                    <p>Pandas</p><p>Matplotlib</p>
-                </div>
-                <p>Large Language Models (LLMs)</p>
-            </div>
+        
 
         </div>
     </section>
@@ -322,6 +328,7 @@
                 class="contact-form"
             >
                 <input type="hidden" name="form-name" value="contact">
+                <input type="hidden" name="_next" value="https://seanthean.netlify.app/#contact-id">
 
                 <div class="form-row">
                     <div class="form-group">
@@ -348,7 +355,6 @@
                     <i class="fa-solid fa-paper-plane"></i> &nbsp;Send Message
                 </button>
 
-                <p class="form-status" aria-live="polite"></p>
             </form>
 
             <div class="socials">
@@ -360,7 +366,7 @@
     </section>
 
     <footer>
-        <p>Sean. 2026.</p>
+        <p>Sean @ 2026</p>
     </footer>
 
     <script>
@@ -418,34 +424,6 @@
             const el = document.getElementById(id);
             if (el) navObserver.observe(el);
         });
-
-        // ── Contact form ──
-        const contactForm = document.querySelector('.contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                const status = contactForm.querySelector('.form-status');
-                const btn = contactForm.querySelector('.form-submit');
-                btn.disabled = true;
-                btn.textContent = 'Sending…';
-                try {
-                    await fetch('/', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                        body: new URLSearchParams(new FormData(contactForm)).toString()
-                    });
-                    contactForm.reset();
-                    status.textContent = '✓ Message sent! I\'ll get back to you soon.';
-                    status.className = 'form-status success';
-                    btn.textContent = 'Send Message';
-                } catch {
-                    status.textContent = '✗ Something went wrong. Please email me directly.';
-                    status.className = 'form-status error';
-                    btn.textContent = 'Send Message';
-                }
-                btn.disabled = false;
-            });
-        }
 
         // ── Back to top ──
         const backToTopBtn = document.getElementById('back-to-top');
