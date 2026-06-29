@@ -287,6 +287,43 @@
         <br>
         <div class="contact-me-box" data-reveal>
             <p><a href="mailto:seaseanthean@gmail.com"><i class="fa-solid fa-envelope fa-lg icon"></i> : seaseanthean@gmail.com</a></p>
+
+            <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                class="contact-form"
+            >
+                <input type="hidden" name="form-name" value="contact">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cf-name">Name</label>
+                        <input id="cf-name" type="text" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cf-email">Email</label>
+                        <input id="cf-email" type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cf-subject">Subject</label>
+                    <input id="cf-subject" type="text" name="subject" placeholder="What's this about?">
+                </div>
+
+                <div class="form-group">
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">
+                    <i class="fa-solid fa-paper-plane"></i> &nbsp;Send Message
+                </button>
+
+                <p class="form-status" aria-live="polite"></p>
+            </form>
+
             <div class="socials">
                 <a href="https://www.linkedin.com/in/sean0705/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl icon"></i></a>
                 <a href="https://github.com/Seann0705" target="_blank"><i class="fa-brands fa-github fa-2xl icon"></i></a>
@@ -296,7 +333,7 @@
     </section>
 
     <footer>
-        <p>Sean.</p>
+        <p>Sean. 2026.</p>
     </footer>
 
     <script>
@@ -354,6 +391,34 @@
             const el = document.getElementById(id);
             if (el) navObserver.observe(el);
         });
+
+        // ── Contact form ──
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const status = contactForm.querySelector('.form-status');
+                const btn = contactForm.querySelector('.form-submit');
+                btn.disabled = true;
+                btn.textContent = 'Sending…';
+                try {
+                    await fetch('/', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: new URLSearchParams(new FormData(contactForm)).toString()
+                    });
+                    contactForm.reset();
+                    status.textContent = '✓ Message sent! I\'ll get back to you soon.';
+                    status.className = 'form-status success';
+                    btn.textContent = 'Send Message';
+                } catch {
+                    status.textContent = '✗ Something went wrong. Please email me directly.';
+                    status.className = 'form-status error';
+                    btn.textContent = 'Send Message';
+                }
+                btn.disabled = false;
+            });
+        }
 
         // ── Back to top ──
         const backToTopBtn = document.getElementById('back-to-top');
