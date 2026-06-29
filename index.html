@@ -19,66 +19,62 @@
                 <li><a href="#about-id"><i class="fa-regular fa-address-card fa-xl"></i></a></li>
                 <li><a href="#experience-id"><i class="fa-solid fa-code fa-xl"></i></a></li>
                 <li><a href="#projects-id"><i class="fa-solid fa-laptop-code fa-xl"></i></a></li>
-                <li><a href="#contact-id"><i class="fa-regular fa-message fa-lg"></i></i></a></li>
+                <li><a href="#contact-id"><i class="fa-regular fa-message fa-lg"></i></a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="me center">
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <div class="me center" id="top">
         <div class="home">
-            <h1>Hello, I'm <span>Sean Thean Sea</span></h1>
-            <h2>A Computer Science Student in the US</h2>
-            <h3> <span>Welcome To My Portfolio!</span> </h3>
+            <h1>Hello, I'm <span class="typing-target"></span><span class="cursor">|</span></h1>
+            <h2>Software Engineer &amp; CS Graduate</h2>
+            <h3><span>Welcome To My Portfolio!</span></h3>
         </div>
 
         <div class="resume">
-<!--             <a href="https://drive.google.com/file/d/1kb3OUI8ruT7dAJ6czgUSKPO47_myI6M4/view?usp=drive_link" target="_blank" class="Resume-button">Resume</a> -->
-            <a href="#" target="_blank" class="Resume-button">Resume</a>
+            <a href="https://drive.google.com/file/d/1kb3OUI8ruT7dAJ6czgUSKPO47_myI6M4/view?usp=drive_link" target="_blank" class="Resume-button">Resume</a>
             <a href="#contact-id" class="contact-me-button">Contact Me</a>
         </div>
     </div>
 
-    <!-- About me part -->
+    <!-- About me -->
     <section class="About-me center" id="about-id">
-        <br><br><br><br><br>
-        <h1><u>About Me</u></h1>
+        <h1 data-reveal><u>About Me</u></h1>
 
-        <div class="details">
+        <div class="details" data-reveal>
 
             <div class="flip">
                 <div class="img-and-text">
-                    <img src="images/picture2.png" alt="" class="me-img">
-<!--                     <div class="text-on-img">Click Me</div> -->
+                    <img src="images/picture2.png" alt="Sean Thean Sea" class="me-img">
                 </div>
-                
 
-                <div class = "flip-box-back">
-<!--                     <h2>A Picture of Me (2023)</h2> -->
+                <div class="flip-box-back">
                     <br>
-<!--                     <p>Coding is super cool, isn't it?</p> -->
                     <p>Thanks for visiting my Website!</p>
                 </div>
-                <!-- <img src="flip.png" alt="" class="flip-box-back"> -->
-                
             </div>
 
             <div class="me-details">
-                <div class="cover-details" >
+                <div class="cover-details">
                     <h2><i class="fa-solid fa-square fa-sm"></i><span>Education: </span> University of South Florida</h2>
                 </div>
 
-                <div class="cover-details" >
-                    <h2><i class="fa-solid fa-square fa-sm"></i><span>Graduated: </span> Dec 2024 </h2>
+                <div class="cover-details">
+                    <h2><i class="fa-solid fa-square fa-sm"></i><span>Graduated: </span> Dec 2024</h2>
                 </div>
 
-                <div class="cover-details" >
-                    <h2><i class="fa-solid fa-square fa-sm"></i><span>Major: </span> Computer Science </h2>
+                <div class="cover-details">
+                    <h2><i class="fa-solid fa-square fa-sm"></i><span>Major: </span> Computer Science</h2>
                 </div>
 
-                <div class= "description">
-                    <h3>My name is <span>Sean Thean Sea</span>. I am a Software Engineer.</h2>
+                <div class="description">
+                    <h3>My name is <span>Sean Thean Sea</span>. I am a Software Engineer.</h3>
                     <br>
-                    <h3>I aim to gain experience and deepen my knowlegde in various topics of technology.</h2>
+                    <h3>I aim to gain experience and deepen my knowledge in various topics of technology.</h3>
                 </div>
             </div>
 
@@ -86,294 +82,288 @@
 
     </section>
 
-    <!-- experience  -->
-    <section class = "projects center" id="experience-id">
-        <br><br><br><br><br>
-        <h1> <u>Work Experience & Skills</u></h1>
-        <br>
-        
-        <div class="project">
-            
+    <!-- Work Experience & Skills -->
+    <section class="experience-section center" id="experience-id">
+        <h1 data-reveal><u>Work Experience &amp; Skills</u></h1>
 
-            <h2>Work Experience</h2>
-            <br>
+        <div class="cards-container">
 
-            <div class="work-img">
-                <img src="images/ups.png" alt="ups image" >
+            <div class="project" data-reveal>
+                <h2>Work Experience</h2>
+                <br>
+                <div class="work-img">
+                    <img src="images/ups.png" alt="UPS logo">
+                </div>
+                <p>&nbsp;</p>
+
+                <p><i class="fa-solid fa-briefcase fa-lg"></i> &nbsp; <b>United Parcel Service (UPS)</b></p>
+                <p><i>Software Engineer Co-Op</i></p>
+                <p>Parsippany, NJ</p>
+                <p>May 2023 – Present</p>
+                <p>&nbsp;</p>
+
+                <p><i class="fa-solid fa-briefcase fa-lg"></i>&nbsp; <b>Vehicle Dealership</b></p>
+                <p><i>Freelance Web Developer</i></p>
+                <p>Remote</p>
+                <p>June 2022 – Aug 2022</p>
             </div>
-            <p>&nbsp;</p>
-            
-            <p><i class="fa-solid fa-briefcase fa-xm"></i> &nbsp; <b>United Parcel Service (UPS)</b></p>
-            <p><i>Software Engineer Co-Op</i></p>
-            <p>Parsippany, NJ </p>
-            <p>May 2023 - Present</p>
-            <p>&nbsp;</p>
 
-            <p><i class="fa-solid fa-briefcase fa-xm"></i>&nbsp; <b>Vehicle Dealership</b></p>
-            <p><i>Freelance Web Developer</i></p>
-            <p>Remote </p>
-            <p>June 2022 - Aug 2022</p>
-            <p>&nbsp;</p>
-        </div>
+            <div class="project" data-reveal>
+                <h2>Programming Languages</h2>
+                <br>
+                <div class="work-img">
+                    <img src="images/python.png" alt="Python">
+                    <img src="images/java.png" alt="Java">
+                    <img src="images/cpp.png" alt="C++">
+                </div>
+                <p>&nbsp;</p>
 
-        <div class="project">
-
-            <h2>Programming Languages</h2>
-            <br>
-
-            <div class="work-img">
-                <img src="images/python.png" alt="ups image">
-                <img src="images/java.png" alt="ups image">
-                <img src="images/cpp.png" alt="ups image">
+                <p>Python</p>
+                <p>C/C++</p>
+                <p>Java</p>
+                <p>JavaScript</p>
+                <p>TypeScript</p>
+                <p>PHP</p>
+                <p>Go</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>MySQL</p>
             </div>
-            <p>&nbsp;</p>
-            
-            <p>Python</p>
-            <p>C/C++</p>
-            <p> Java</p>
-            <p> JavaScript </p>
-            <p>TypeScript</p>
-            <p>PHP</p>
-            <p>Go</p>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>MySQL</p>
-           
-        </div>
 
-        <div class="project">
+            <div class="project" data-reveal>
+                <h2>Technologies and Tools</h2>
+                <br>
+                <div class="work-img">
+                    <img src="images/opencv.png" alt="OpenCV">
+                    <img src="images/postman.png" alt="Postman">
+                    <img src="images/spring.png" alt="Spring Boot">
+                </div>
+                <p>&nbsp;</p>
 
-            <h2>Technologies and Tools</h2>
-            <br>
-
-            <div class="work-img">
-                <img src="images/opencv.png" alt="ups image">
-                <img src="images/postman.png" alt="ups image">
-                <img src="images/spring.png" alt="ups image">
+                <div class="tech-grid">
+                    <p>Spring Boot</p><p>OOP</p>
+                    <p>OpenCV</p><p>MediaPipe</p>
+                    <p>Postman</p><p>API</p>
+                    <p>RFID</p><p>Raspberry Pi</p>
+                    <p>OAuth</p><p>Agile</p>
+                    <p>TensorFlow</p><p>React</p>
+                    <p>Node.js</p><p>Flask</p>
+                    <p>VS Code &amp; IntelliJ</p><p>GitHub</p>
+                    <p>Azure DevOps</p><p>MongoDB</p>
+                </div>
+                <p>Software Development Life Cycle</p>
             </div>
-            <p>&nbsp;</p>
-    
-            <td>
-                <div style="float:left;width:50%;"><p>Spring Boot</p></div>
-                <div style="float:right;width:50%;"><p>OOP</p></div>
-                <div style="float:left;width:50%;"><p>OpenCV</p></div>
-                <div style="float:right;width:50%;"><p>MediaPipe</p></div>
-                <div style="float:left;width:50%;"><p>Postman</p></div>
-                <div style="float:right;width:50%;"><p>API</p></div>
-                <div style="float:left;width:50%;"><p>RFID</p></div>
-                <div style="float:right;width:50%;"><p>Raspberry Pi</p></div>
-                <div style="float:left;width:50%;"><p>OAuth</p></div>
-                <div style="float:left;width:50%;"><p>Agile</p></div>
-                <div style="float:right;width:50%;"><p>TensorFlow</p></div>
-                <div style="float:left;width:50%;"><p>React</p></div>
-                <div style="float:right;width:50%;"><p>Node.js</p></div>
-                <div style="float:left;width:50%;"><p>Flask</p></div>
-                <div style="float:right;width:50%;"><p>VS Code & IntelliJ</p></div>
-                <div style="float:right;width:50%;"><p>GitHub</p></div>
-                <div style="float:right;width:50%;"><p>Azure DevOps</p></div>
-                <div style="float:right;width:50%;"><p>MongoDB</p></div>
 
-            </td>
-            <p>Software Development Life Cycle</p>
-        </div>
-        <br><br>
-        
         </div>
     </section>
 
-    <!-- Project part  -->
-    <section class = "projects center" id="projects-id">
-        <br>
-        <h1><u>Personal Projects</u></h1>
-        <br>
+    <!-- Projects -->
+    <section class="projects-section center" id="projects-id">
+        <h1 data-reveal><u>Personal Projects</u></h1>
 
-        <h2>Big/Real-World Projects:</h2>
-        
-        <div class="project">
-            <img src="images/recordplayer.jpg" alt="" class="project-img">
+        <h2 class="section-subtitle" data-reveal>Big/Real-World Projects:</h2>
 
-            <h2>Spotify Record Player</h2>
-            <p>Scan Cards To Play Songs</p>
+        <div class="cards-container">
+            <div class="project" data-reveal>
+                <img src="images/recordplayer.jpg" alt="Spotify Record Player project" class="project-img">
+                <h2>Spotify Record Player</h2>
+                <p>Scan Cards To Play Songs</p>
+                <div class="project-buttons">
+                    <a href="https://youtu.be/k5RkMsLsVoM?si=xL0YbEPsEYt0eV4S" class="visit-project" target="_blank">Visit</a>
+                    <a href="https://github.com/Seann0705/Spotify-Record-Player/tree/main/rfidspotify" class="github" target="_blank">GitHub</a>
+                </div>
+            </div>
 
-            <div class= "project-buttons">
-                <a href="https://youtu.be/k5RkMsLsVoM?si=xL0YbEPsEYt0eV4S" class = "visit-project" target="_blank">Visit</a>
-                <a href="https://github.com/Seann0705/Spotify-Record-Player/tree/main/rfidspotify" class = "github" target="_blank">GitHub</a>
+            <div class="project" data-reveal>
+                <img src="images/FingerSpotify.jpg" alt="Finger-Controlled Spotify project" class="project-img">
+                <h2>Finger-Controlled Spotify</h2>
+                <p>Control Spotify With a Finger</p>
+                <div class="project-buttons">
+                    <a href="https://youtu.be/eEMBGbzDOHk?si=LxLAXOUUylhj0PZn" class="visit-project" target="_blank">Visit</a>
+                    <a href="https://github.com/Seann0705/Finger-Controlled-Spotify-Player" class="github" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project" data-reveal>
+                <img src="images/sudoku.png" alt="AI Sudoku Solver project" class="project-img">
+                <h2>AI Sudoku Solver</h2>
+                <p>Solve a Sudoku with AI in real-time</p>
+                <div class="project-buttons">
+                    <a href="https://www.youtube.com/watch?v=eJN0e5Ki1Rk" class="visit-project" target="_blank">Visit</a>
+                    <a href="#projects-id" class="github"><del>GitHub</del></a>
+                </div>
+            </div>
+
+            <div class="project" data-reveal>
+                <img src="images/ToDo.jpg" alt="To-Do List Website project" class="project-img">
+                <h2>To-Do List Website</h2>
+                <p>Try it out!</p>
+                <div class="project-buttons">
+                    <a href="https://todonow.pages.dev/" class="visit-project" target="_blank">Visit</a>
+                    <a href="https://github.com/Seann0705/to-do-list" class="github" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project" data-reveal>
+                <img src="images/Portfolio.png" alt="Personal portfolio website" class="project-img">
+                <h2>This Portfolio</h2>
+                <p>Click on "Visit" for the recursion!</p>
+                <div class="project-buttons">
+                    <a href="https://seanthean.netlify.app/" class="visit-project" target="_blank">Visit</a>
+                    <a href="https://github.com/Seann0705/web" class="github" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project" data-reveal>
+                <img src="images/qMark.webp" alt="Coming soon placeholder" class="project-img">
+                <h2>What's Next?</h2>
+                <p>New project is coming!</p>
+                <div class="project-buttons">
+                    <a href="#projects-id" class="visit-project"><del>Visit</del></a>
+                    <a href="#projects-id" class="github"><del>GitHub</del></a>
+                </div>
             </div>
         </div>
 
-        <div class="project">
-            <img src="images/FingerSpotify.jpg" alt="" class="project-img">
+        <h2 class="section-subtitle" data-reveal>Small-but-Fun Projects:</h2>
 
-            <h2>Finger-Controlled Spotify</h2>
-            <p>Control Spotify With a Finger</p>
-
-            <div class= "project-buttons">
-                <a href="https://youtu.be/eEMBGbzDOHk?si=LxLAXOUUylhj0PZn" class = "visit-project" target="_blank">Visit</a>
-                <a href="https://github.com/Seann0705/Finger-Controlled-Spotify-Player" class = "github" target="_blank">GitHub</a>
+        <div class="cards-container">
+            <div class="project" data-reveal>
+                <img src="images/Bubbles.png" alt="Bubbles Animation project" class="project-img">
+                <h2>Bubbles Animation</h2>
+                <p>Animated Bubbles forming figures</p>
+                <div class="project-buttons">
+                    <a href="https://www.youtube.com/watch?v=RBHZ2N9HkSQ" class="visit-project" target="_blank">Visit</a>
+                    <a href="https://github.com/Seann0705/Bubbles_Animation" class="github" target="_blank">GitHub</a>
+                </div>
             </div>
-        </div>
 
-        <div class="project">
-            <img src="images/sudoku.png" alt="" class="project-img">
-
-            <h2>AI Sudoku Solver</h2>
-            <p>Solve a Sudoku with AI in real-time</p>
-
-            <div class= "project-buttons">
-                <a href="https://www.youtube.com/watch?v=eJN0e5Ki1Rk" class = "visit-project" target="_blank">Visit</a>
-                <a href="#projects-id" class = "github">GitHub</a>
+            <div class="project" data-reveal>
+                <img src="images/YinYang.jpg" alt="Yin and Yang Animation project" class="project-img">
+                <h2>Yin and Yang Animation</h2>
+                <p>Watch 4 circles form Yin &amp; Yang</p>
+                <div class="project-buttons">
+                    <a href="https://youtu.be/6rv768l2hAo?si=9hlfBa7A5ypaP3MV" class="visit-project" target="_blank">Visit</a>
+                    <a href="#projects-id" class="github"><del>GitHub</del></a>
+                </div>
             </div>
-        </div>
 
-<!--         <div class="project">
-            <img src="images/MotorcycleWeb.png" alt="" class="project-img">
-
-            <h2>Vehicle Dealership Website</h2>
-            <p>Freelance work in 2022</p>
-
-            <div class= "project-buttons">
-                <a href="https://seasambath.com/" class = "visit-project" target="_blank">Visit</a>
-                <a href="#projects-id" class = "github"><del>GitHub</del></a>
+            <div class="project" data-reveal>
+                <img src="images/AsciiArt.jpg" alt="ASCII Art project" class="project-img">
+                <h2>Ascii Art</h2>
+                <p>Images converted into Ascii Images</p>
+                <div class="project-buttons">
+                    <a href="https://www.youtube.com/watch?v=-FoU1zalEIA" class="visit-project" target="_blank">Visit</a>
+                    <a href="https://github.com/Seann0705/Ascii_Art" class="github" target="_blank">GitHub</a>
+                </div>
             </div>
-        </div> -->
 
-        <div class="project">
-            <img src="images/ToDo.jpg" alt="" class="project-img">
-
-            <h2>To-Do List Website</h2>
-            <p>Try it out!</p>
-            
-            <div class= "project-buttons">
-                <a href="https://todonow.pages.dev/" class = "visit-project" target="_blank">Visit</a>
-                <a href="https://github.com/Seann0705/to-do-list" class = "github" target="_blank">GitHub</a>
+            <div class="project" data-reveal>
+                <img src="images/DVD.png" alt="DVD Animation project" class="project-img">
+                <h2>DVD Animation</h2>
+                <p>Watch DVD hit the corners for 5mn</p>
+                <div class="project-buttons">
+                    <a href="https://www.youtube.com/watch?v=ur9Gmq4d0Co" class="visit-project" target="_blank">Visit</a>
+                    <a href="https://github.com/Seann0705/DVD_Animation" class="github" target="_blank">GitHub</a>
+                </div>
             </div>
-            
-        </div>
 
-        <div class="project">
-            <img src="images/Portfolio.png" alt="" class="project-img">
-
-            <h2>This Portfolio</h2>
-            <p>Click on "Visit" for the recursion!</p>
-            
-            <div class= "project-buttons">
-                <a href="https://seanthean.netlify.app/" class = "visit-project">Visit</a>
-                <a href="https://github.com/Seann0705/web" class = "github">GitHub</a>
+            <div class="project" data-reveal>
+                <img src="images/qMark.webp" alt="Coming soon placeholder" class="project-img">
+                <h2>What's Next?</h2>
+                <p>New project is coming!</p>
+                <div class="project-buttons">
+                    <a href="#projects-id" class="visit-project"><del>Visit</del></a>
+                    <a href="#projects-id" class="github"><del>GitHub</del></a>
+                </div>
             </div>
-            
-        </div>
-
-        <div class="project">
-            <img src="images/qMark.webp" alt="" class="project-img">
-
-            <h2>What's Next?</h2>
-            <p>New project is coming!</p>
-
-            <div class= "project-buttons">
-                <a href="#projects-id" class = "visit-project"><del>Visit</del></a>
-                <a href="#projects-id" class = "github"><del>GitHub</del></a>
-            </div>
-        </div>
-
-        <br><br><br><br>
-
-
-        <h2>Small-but-Fun Projects:</h2>    
-
-        <div class="project">
-            <img src="images/Bubbles.png" alt="" class="project-img">
-
-            <h2>Bubbles Animation</h2>
-            <p>Animated Bubbles forming figures</p>
-
-            <div class= "project-buttons">
-                <a href="https://www.youtube.com/watch?v=RBHZ2N9HkSQ" class = "visit-project" target="_blank">Visit</a>
-                <a href="https://github.com/Seann0705/Bubbles_Animation" class = "github" target="_blank">GitHub</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <img src="images/YinYang.jpg" alt="" class="project-img">
-
-            <h2>Yin and Yang Animation</h2>
-            <p>Watch 4 circles form Yin & Yang</p>
-
-            <div class= "project-buttons">
-                <a href="https://youtu.be/6rv768l2hAo?si=9hlfBa7A5ypaP3MV" class = "visit-project" target="_blank">Visit</a>
-                <a href="#projects-id" class = "github"><del>GitHub</del></a>
-            </div>
-        </div>
-
-        <div class="project">
-            <img src="images/AsciiArt.jpg" alt="" class="project-img">
-
-            <h2>Ascii Art</h2>
-            <p>Images converted into Ascii Images</p>
-
-            <div class= "project-buttons">
-                <a href="https://www.youtube.com/watch?v=-FoU1zalEIA" class = "visit-project" target="_blank">Visit</a>
-                <a href="https://github.com/Seann0705/Ascii_Art" class = "github" target="_blank">GitHub</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <img src="images/DVD.png" alt="" class="project-img">
-
-            <h2>DVD Animation</h2>
-            <p>Watch DVD hit the corners for 5mn</p>
-
-            <div class= "project-buttons">
-                <a href="https://www.youtube.com/watch?v=ur9Gmq4d0Co" class = "visit-project" target="_blank">Visit</a>
-                <a href="https://github.com/Seann0705/DVD_Animation" class = "github">GitHub</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <img src="images/qMark.webp" alt="" class="project-img">
-
-            <h2>What's Next?</h2>
-            <p>New project is coming!</p>
-
-            <div class= "project-buttons">
-                <a href="#projects-id" class = "visit-project"><del>Visit</del></a>
-                <a href="#projects-id" class = "github"><del>GitHub</del></a>
-            </div>
-        </div>
-        
         </div>
     </section>
 
-    <!-- contact me section -->
+    <!-- Contact -->
     <section class="Contact center" id="contact-id">
-        <br><br>
-        <h1><u>Contact Me</u></h1>
-        <h2>Let's Get in Touch:</h2>
+        <h1 data-reveal><u>Contact Me</u></h1>
+        <h2 data-reveal>Let's Get in Touch:</h2>
         <br>
-        <div class="contact-me-box">
-            <p></p>
-<!--             <p><a href="mailto: seanthean@usf.edu"><i class="fa-solid fa-envelope fa-lg icon"></i> : seanthean@usf.edu </a></p> -->
-            <br>
-            <p><a href="mailto: seaseanthean@gmail.com"><i class="fa-solid fa-envelope fa-lg icon"></i> : seaseanthean@gmail.com </a></p>
-
+        <div class="contact-me-box" data-reveal>
+            <p><a href="mailto:seaseanthean@gmail.com"><i class="fa-solid fa-envelope fa-lg icon"></i> : seaseanthean@gmail.com</a></p>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/sean0705/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl icon"></i></a>
                 <a href="https://github.com/Seann0705" target="_blank"><i class="fa-brands fa-github fa-2xl icon"></i></a>
-                <!-- <a href="https://www.instagram.com/_sean.s__/" target="_blank"><i class="fa-brands fa-instagram fa-2xl icon"></i></a> -->
-                <a href="https://www.youtube.com/channel/UCfY5E09M7jiWIJjhhEWNz_Q" target="_blank"><i class="fa-brands fa-youtube fa-2xl icon"></i></a>
-                
                 <!-- <a href="https://www.youtube.com/channel/UCfY5E09M7jiWIJjhhEWNz_Q" target="_blank"><i class="fa-brands fa-youtube fa-2xl icon"></i></a> -->
             </div>
         </div>
     </section>
 
-   
+    <footer>
+        <p>Sean.</p>
+    </footer>
+
+    <script>
+        // ── Typing animation ──
+        const phrases = ["Sean Thean Sea", "a Software Engineer", "a CS Graduate"];
+        const typingEl = document.querySelector('.typing-target');
+        let phraseIndex = 0, charIndex = 0, isDeleting = false;
+
+        function type() {
+            const current = phrases[phraseIndex % phrases.length];
+            typingEl.textContent = isDeleting
+                ? current.substring(0, charIndex - 1)
+                : current.substring(0, charIndex + 1);
+            isDeleting ? charIndex-- : charIndex++;
+
+            let delay = isDeleting ? 50 : 90;
+            if (!isDeleting && charIndex === current.length) {
+                delay = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex++;
+                delay = 400;
+            }
+            setTimeout(type, delay);
+        }
+        type();
+
+        // ── Scroll reveal ──
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+
+        // ── Active nav highlight ──
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+        const anchorIds = ['top', 'about-id', 'experience-id', 'projects-id', 'contact-id'];
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+                    });
+                }
+            });
+        }, { rootMargin: '-35% 0px -55% 0px' });
+
+        anchorIds.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) navObserver.observe(el);
+        });
+
+        // ── Back to top ──
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTopBtn.classList.toggle('visible', window.scrollY > 400);
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
 </body>
-
-<footer>
-    <p>Sean.</p>
-</footer>
-
 </html>
-
-
-
